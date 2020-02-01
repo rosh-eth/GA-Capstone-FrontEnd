@@ -5,6 +5,7 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import LoginForm from './LoginForm';
 import AOS from 'aos';
+import FormModal from './Modal';
 
 const Home = () => {
 
@@ -14,7 +15,8 @@ const Home = () => {
         <React.Fragment>
             <Container data-aos="fade-up">
                 <Row className="d-flex justify-content-between">
-                    <h4 className="ml-3 my-3 py-3 text-primary">InstaDapp</h4>
+                    <h4 className="ml-3 my-3 py-3 text-primary">InstaDapp</h4>;
+                    <FormModal />;
                     <Link to='/dashboard'><Button className="d-flex justify-content-end mr-3 my-3 py-3">Dashboard</Button></Link>
                 </Row>
             </Container>
