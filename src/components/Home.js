@@ -7,7 +7,6 @@ return (
         <p>Hello</p>
     </React.Fragment>
 )
-
 }
 
 export default Home;

@@ -2,8 +2,10 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
+import LoginForm from './components/LoginForm';
 
 import {Switch, Route} from 'react-router-dom';
+import {Container} from 'react-bootstrap';
 
 {/* <link
   rel="stylesheet"
@@ -18,8 +20,12 @@ function App() {
   
   return (
     <div>
+      
       <Switch>
-        <Route exact path="/" component={Home} />
+      <Container>
+        <Route exact path="/" component={LoginForm} />
+        <Route exact path="/home" component={Home} />
+        </Container>
       </Switch>
     </div>
   );
