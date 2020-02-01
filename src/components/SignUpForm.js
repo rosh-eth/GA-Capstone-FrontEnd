@@ -9,7 +9,7 @@ const SignUpForm = () => {
             <Card.Img className="img-thumbnail" style={{ width: '8rem' }} variant="top" src="https://instadapp.io/img/logo.png" />
             <Card.Header>InstaDapp</Card.Header>
                 <Card.Body>
-                    <Card.Title className="text-center">Login</Card.Title>
+                    <Card.Title className="text-center">Sign Up!</Card.Title>
                     <Card.Text>
                         <Form className="text-center" >
                             <Form.Group controlId="formBasicEmail">
@@ -18,6 +18,16 @@ const SignUpForm = () => {
                                 <Form.Text className="text-muted">
                                     We'll never share your email with anyone else.
                     </Form.Text>
+                            </Form.Group>
+
+                            <Form.Group controlId="formFirstName">
+                                <Form.Label>First Name</Form.Label>
+                                <Form.Control type="text" placeholder="Donald" />
+                            </Form.Group>
+
+                            <Form.Group controlId="formLastName">
+                                <Form.Label>Last Name</Form.Label>
+                                <Form.Control type="text" placeholder="Trump" />
                             </Form.Group>
 
                             <Form.Group controlId="formBasicPassword">
