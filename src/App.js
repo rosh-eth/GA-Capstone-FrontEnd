@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Home from './components/Home/Home';
-import LoginForm from './components/LoginForm';
+import LoginForm from './components/Forms/LoginForm';
 import AOS from 'aos';
 
 import {Switch, Route} from 'react-router-dom';
 import {Container} from 'react-bootstrap';
-import SignUpForm from './components/SignUpForm';
-import Dashboard from './components/Dashboard';
+import SignUpForm from './components/Forms/SignUpForm';
+import Dashboard from './components/Dashboard/Dashboard';
 
 const App = () => {
   

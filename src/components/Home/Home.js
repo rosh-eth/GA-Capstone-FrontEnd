@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { Link } from 'react-router-dom';
 import AOS from 'aos';
-import FormModal from '../Modal';
+import FormModal from '../Utils/Modal';
 import FAQ from './FAQ';
 import Benefits from './Benefits';
 
