@@ -14,8 +14,8 @@ const Home = () => {
         <React.Fragment>
             <Container data-aos="fade-up">
                 <Row className="d-flex justify-content-between">
-                    <Button className="ml-3 my-3 py-3">InstaDapp</Button>
-                    <Button className="d-flex justify-content-end mr-3 my-3 py-3">Dashboard</Button>
+                    <h4 className="ml-3 my-3 py-3 text-primary">InstaDapp</h4>
+                    <Link to='/dashboard'><Button className="d-flex justify-content-end mr-3 my-3 py-3">Dashboard</Button></Link>
                 </Row>
             </Container>
             <Jumbotron className="text-center">
@@ -24,7 +24,7 @@ const Home = () => {
                     Seamlessly manage, optimize and deploy your assets to get the best returns across protocols.
   </h4>
 
-                <Link to="/"><Button variant="primary mr-3">Dashboard <FontAwesomeIcon icon={faChevronRight} /></Button></Link>
+                <Link to="/dashboard"><Button variant="primary mr-3">Dashboard <FontAwesomeIcon icon={faChevronRight} /></Button></Link>
                 <Button variant="secondary">Newsletter</Button>
             </Jumbotron>
 
