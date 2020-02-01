@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home';
 import LoginForm from './components/LoginForm';
+import AOS from 'aos';
 
 import {Switch, Route} from 'react-router-dom';
 import {Container} from 'react-bootstrap';
@@ -13,9 +14,9 @@ import {Container} from 'react-bootstrap';
   crossorigin="anonymous"
 /> */}
 
-function App() {
+const App = () => {
   
-  
+  AOS.init()
   
   return (
     <div>
