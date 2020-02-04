@@ -3,6 +3,8 @@ import './App.css';
 import Home from './components/Home/Home';
 import LoginForm from './components/Forms/LoginForm';
 import AOS from 'aos';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import {Switch, Route} from 'react-router-dom';
 import {Container} from 'react-bootstrap';
@@ -12,6 +14,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 const App = () => {
   
   AOS.init()
+  library.add(fab)
   
   return (
     <div>
