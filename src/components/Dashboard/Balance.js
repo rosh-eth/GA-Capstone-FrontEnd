@@ -33,7 +33,7 @@ const Balance = () => {
                                 <h5>$800.32</h5>
                                 </Col>
                                 <Col>
-                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/eth.svg" width="50px" />
+                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/bat.svg" width="50px" />
                                 </Col>
                                 </Row>
                             </Card.Text>
@@ -47,7 +47,7 @@ const Balance = () => {
                                 <h5>$800.32</h5>
                                 </Col>
                                 <Col>
-                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/eth.svg" width="50px" />
+                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/knc.svg" width="50px" />
                                 </Col>
                                 </Row>
                             </Card.Text>
