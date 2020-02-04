@@ -6,6 +6,7 @@ import CompoundPosition from './CompoundPosition';
 import MakerCDP from './MakerCDP';
 import Balance from './Balance';
 import DashboardMenu from '../Utils/DashboardMenu';
+import Assets from './Assets'
 
 
 const style = {
@@ -22,6 +23,7 @@ const Dashboard = () => {
                 </Col>
                 <Col xs="10" sm="10" md="8" lg="9" xl="9"  style={style}>
                     <Title />
+                    <Assets />
                     <Balance />
                     <MakerVault />
                     <CompoundPosition />
