@@ -1,10 +1,15 @@
 import React from 'react'
+import {Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
 
 const Title = () => {
 
     return (
         <div>
-            <p>hi</p>
+            <small className="d-block text-uppercase mt-3">Overview</small>
+            <h3 className="d-inline">Dashboard</h3>
+            <Link to="/"><Button className="d-inline float-right btn-primary">Connect</Button></Link>
+            <hr />
         </div>
     )
 
