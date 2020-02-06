@@ -11,7 +11,7 @@ const Assets = () => {
                         <Card.Body>
                             <Card.Title>Assets</Card.Title>
                             <Card.Text>
-                                <h2>$0.00</h2>
+                                <h2>$3,000.00</h2>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -19,7 +19,7 @@ const Assets = () => {
                         <Card.Body>
                             <Card.Title>Net Worth</Card.Title>
                             <Card.Text>
-                                <h2>$0.00</h2>
+                                <h2>$2,000.00</h2>
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -27,7 +27,7 @@ const Assets = () => {
                         <Card.Body>
                             <Card.Title>Debt</Card.Title>
                             <Card.Text>
-                                <h2>$0.00</h2>
+                                <h2>$1,000.00</h2>
                             </Card.Text>
                         </Card.Body>
                     </Card>

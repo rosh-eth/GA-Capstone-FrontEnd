@@ -3,7 +3,6 @@ import { Row, Col } from 'react-bootstrap';
 import Title from './Title';
 import MakerVault from './MakerVault';
 import CompoundPosition from './CompoundPosition';
-import MakerCDP from './MakerCDP';
 import Balance from './Balance';
 import DashboardMenu from '../Utils/DashboardMenu';
 import Assets from './Assets'
@@ -27,7 +26,6 @@ const Dashboard = () => {
                     <Balance />
                     <MakerVault />
                     <CompoundPosition />
-                    <MakerCDP />
                 </Col>
             </Row>
 
