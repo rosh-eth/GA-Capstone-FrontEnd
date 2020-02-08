@@ -7,6 +7,7 @@ import AOS from 'aos';
 import FormModal from '../Utils/Modal';
 import FAQ from './FAQ';
 import Benefits from './Benefits';
+import LoginModal from '../Utils/LoginModal';
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
             <Container data-aos="fade-up">
                 <Row className="d-flex justify-content-between">
                     <h4 className="ml-3 my-3 py-3 text-primary">InstaDapp</h4>;
-                    <FormModal />;
+                    <LoginModal />;
                     <Link to='/dashboard'><Button className="d-flex justify-content-end mr-3 my-3 py-3">Dashboard</Button></Link>
                 </Row>
             </Container>
