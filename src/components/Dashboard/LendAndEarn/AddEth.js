@@ -1,7 +1,18 @@
-import React from 'react';
+import React , {useContext} from 'react';
 import { Card, Col, Row, Button, Image } from 'react-bootstrap';
+import {UserContext} from '../../../App';
 
 const AddEth = () => {
+    
+    const userContext = useContext(UserContext);
+
+    const deposit = (qty) => {
+        alert('deposit made');
+    }
+
+    const withdraw = (qty) => {
+        alert('withdrawal made');
+    }
 
     return (
         <div>
@@ -10,7 +21,7 @@ const AddEth = () => {
                     <Card.Img className="rounded mx-auto d-block my-4" style={{ width: '120px' }} src="https://instadapp.io/earn/img/icons/erc20Tokens/eth.svg" />
                     <Card.Body>
                         <Card.Title>
-                            <h2>0.00</h2>
+                            <h2>{userContext.eth}</h2>
                             <p>Your ETH Balance</p>
                         </Card.Title>
                         <Card.Text>
@@ -19,7 +30,7 @@ const AddEth = () => {
                             <Row>
                                 <Col>
                                     <div class="input-group input-group-lg">
-                                        <input type="text" data-id="dai" class="form-control" placeholder="0.00" aria-label="Qty" aria-describedby="basic-addon1"></input>
+                                        <input type="text" data-id="eth" class="form-control" placeholder="0.00" aria-label="Qty"  onChange={(event) => event.target.value}></input>
                                     </div>
                                 </Col>
                                 <Col>
@@ -27,8 +38,8 @@ const AddEth = () => {
                                 </Col>
                             </Row>
                         </Card.Text>
-                        <Button variant="success" className="mx-3">Deposit</Button>
-                        <Button variant="primary">Withdraw</Button>
+                        <Button onClick={deposit} variant="success" className="mx-3">Deposit</Button>
+                        <Button onClick={withdraw} variant="primary">Withdraw</Button>
                     </Card.Body>
                 </Card>
             </Row>

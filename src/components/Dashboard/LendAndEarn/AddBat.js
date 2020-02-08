@@ -11,7 +11,7 @@ const AddBat = () => {
                     <Card.Body>
                         <Card.Title>
                             <h2>0.00</h2>
-                            <p>Your Bat Balance</p>
+                            <p>Your BAT Balance</p>
                         </Card.Title>
                         <Card.Text>
                             <hr />

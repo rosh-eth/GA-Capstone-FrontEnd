@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Card , Col, Row, CardColumns, Image} from 'react-bootstrap';
+import {UserContext} from '../../App';
 
 const Balance = () => {
+    
+    const userContext = useContext(UserContext);
 
     return (
         <div>
@@ -15,7 +18,7 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">4.5</h6>
-                                <h5>$800.32</h5>
+                                <h5>{userContext.eth}</h5>
                                 </Col>
                                 <Col>
                                     <Image src="https://instadapp.io/img/icons/erc20Tokens/eth.svg" width="50px" />
@@ -30,10 +33,10 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">4.5</h6>
-                                <h5>$800.32</h5>
+                                <h5>{userContext.dai}</h5>
                                 </Col>
                                 <Col>
-                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/bat.svg" width="50px" />
+                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/dai.svg" width="50px" />
                                 </Col>
                                 </Row>
                             </Card.Text>
@@ -44,10 +47,10 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">4.5</h6>
-                                <h5>$800.32</h5>
+                                <h5>{userContext.bat}</h5>
                                 </Col>
                                 <Col>
-                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/knc.svg" width="50px" />
+                                    <Image src="https://instadapp.io/img/icons/erc20Tokens/bat.svg" width="50px" />
                                 </Col>
                                 </Row>
                             </Card.Text>
