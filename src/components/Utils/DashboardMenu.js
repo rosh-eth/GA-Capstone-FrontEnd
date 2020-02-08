@@ -14,14 +14,14 @@ const Menu = () => {
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faHome} className="mr-3"/>Dashboard</Link></p>
+                    <p><Link to='/dashboard'><FontAwesomeIcon icon={faHome} className="mr-3"/>Dashboard</Link></p>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
                     <p><Link to='/'><FontAwesomeIcon icon={faRandom} className="mr-3" />MCD Migration</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faDollarSign} className="mr-3" />Lend & Earn</Link></p>
+                    <p><Link to='/lendandearn'><FontAwesomeIcon icon={faDollarSign} className="mr-3" />Lend & Earn</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
                     <p><Link to='/'><FontAwesomeIcon icon={faCompass} className="mr-3" />Protocol Bridge</Link></p>

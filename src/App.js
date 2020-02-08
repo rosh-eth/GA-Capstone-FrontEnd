@@ -10,6 +10,7 @@ import {Switch, Route} from 'react-router-dom';
 import {Container} from 'react-bootstrap';
 import SignUpForm from './components/Login/SignUpForm';
 import Dashboard from './components/Dashboard/Dashboard';
+import LendAndEarn from './components/Dashboard/LendAndEarn/LendAndEarn';
 
 const App = () => {
   
@@ -26,6 +27,8 @@ const App = () => {
         <Route exact path="/signup" component={SignUpForm} />
         <Route exact path="/login" component={LoginForm} />
         <Route exact path="/dashboard" component={Dashboard} />
+        <Route exact path="/lendandearn" component={LendAndEarn} />
+
         </Container>
       </Switch>
     </div>
