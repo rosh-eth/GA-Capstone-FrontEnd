@@ -42,7 +42,7 @@ const App = () => {
     <div>
       <PortfolioProvider value={{userId, setUser, eth, setEth, dai, setDai, bat, setBat}}>
       <Switch>
-      <Container>
+      <Container style={{ background: '#F9FBFD' }} fluid >
         <Route exact path="/" component={Home} />
         <Route exact path="/home" component={Home} />
         <Route exact path="/signup" component={SignUpForm} />
