@@ -8,7 +8,7 @@ import Cards from './Cards';
 import { Container} from 'react-bootstrap';
 import Screen from './Screen';
 import Statement from './Statement';
-
+import NavFooter from './NavFooter';
 
 const Home = () => {
 
@@ -24,8 +24,8 @@ const Home = () => {
                 <Cards />
                 <FAQ />
                 <Statement />
+                <NavFooter />
             </Container>
-            
         </React.Fragment>
     )
 }

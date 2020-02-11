@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import Title from './Title';
 import MakerVault from './MakerVault';
 import CompoundPosition from './CompoundPosition';
@@ -16,6 +16,7 @@ const Dashboard = () => {
  
     return(
         <React.Fragment>
+            <Container>
             <Row>
                 <Col xs="2" sm="2" md="4" lg="3" xl="3"  className="border-right">
                     <DashboardMenu />
@@ -29,7 +30,7 @@ const Dashboard = () => {
                 </Col>
             </Row>
 
-            
+            </Container>
         </React.Fragment>
  )
 
