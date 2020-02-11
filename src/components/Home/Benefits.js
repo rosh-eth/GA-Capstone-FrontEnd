@@ -1,9 +1,15 @@
 import React from 'react';
+import AOS from 'aos';
 import { Jumbotron, Button, Row, Container, Image, Col } from 'react-bootstrap';
 
 const Benefits = () => {
+
+    AOS.init({
+        duration:5000
+    })
+
     return (
-        <React.Fragment>
+        <div data-aos="zoom-in">
             <h2 className="text-center py-5 my-3 font-weight-normal">InstaDApp makes it much <span className="text-primary">simpler</span> to...</h2>
 
             <Row className="mb-4 py-2">
@@ -60,7 +66,7 @@ const Benefits = () => {
         </p>
                 </Col>
             </Row>
-        </React.Fragment>
+        </div>
     )
 
 }

@@ -1,9 +1,6 @@
 import React from 'react';
-import { Jumbotron, Button, Row, Container, Image, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import './HomeStyle.css';
+import { Jumbotron, Row, Image, Col } from 'react-bootstrap';
+
 
 const Screen = () => {
 
