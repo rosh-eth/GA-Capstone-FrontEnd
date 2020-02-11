@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import AOS from 'aos';
 import Title from './Title';
 import FAQ from './FAQ';

@@ -28,6 +28,8 @@ const App = () => {
     .then(data => {
       console.log(data);
       setEth(data.user.assets.eth)
+      setDai(data.user.assets.dai)
+      setBat(data.user.assets.bat)
     })
   }, [])
 
