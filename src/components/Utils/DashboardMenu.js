@@ -2,7 +2,7 @@ import React from 'react';
 import {Row, Col, Image} from 'react-bootstrap';
 import {Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRandom, faChevronRight, faHome, faDollarSign, faCompass, faEject, faMailBulk } from '@fortawesome/free-solid-svg-icons';
+import { faRandom, faHome, faDollarSign, faCompass, faEject, faMailBulk } from '@fortawesome/free-solid-svg-icons';
 
 const Menu = () => {
 

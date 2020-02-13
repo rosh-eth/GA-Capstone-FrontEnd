@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Row, Container, Image, Col } from 'react-bootstrap';
+import { Button, Row, Container} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import LoginModal from '../Utils/LoginModal';
 

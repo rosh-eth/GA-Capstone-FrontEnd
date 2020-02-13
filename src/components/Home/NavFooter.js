@@ -1,7 +1,6 @@
 import React from 'react';
-import { Table, Button, Row, Container, Image, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import AOS from 'aos';
 
 const NavFooter = () => {
 

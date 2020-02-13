@@ -1,6 +1,6 @@
 import React from 'react';
 import AOS from 'aos';
-import { Jumbotron, Button, Row, Container, Image, Col } from 'react-bootstrap';
+import { Row, Image, Col } from 'react-bootstrap';
 
 const Benefits = () => {
 

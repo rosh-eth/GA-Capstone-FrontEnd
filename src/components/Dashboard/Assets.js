@@ -1,5 +1,5 @@
 import React, {useContext} from 'react';
-import { Card , Col, Row, CardColumns} from 'react-bootstrap';
+import { Card , Row, CardColumns} from 'react-bootstrap';
 import {netWorth} from './Calculations/Calculations';
 import {UserContext} from '../../App';
 

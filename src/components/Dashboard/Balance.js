@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Card , Col, Row, CardColumns, Image} from 'react-bootstrap';
 import {UserContext} from '../../App';
-import {calcBalance, priceFeed } from './Calculations/Calculations';
+import {calcBalance } from './Calculations/Calculations';
 
 const Balance = () => {
     
