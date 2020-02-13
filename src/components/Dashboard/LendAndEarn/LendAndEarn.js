@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Container } from 'react-bootstrap';
 import DashboardMenu from '../../Utils/DashboardMenu';
 import AddDai from './AddDai';
 import Title from './Title';
@@ -15,6 +15,7 @@ const LendAndEarn = () => {
  
     return(
         <React.Fragment>
+            <Container>
             <Row>
                 <Col xs="2" sm="2" md="4" lg="3" xl="3"  className="border-right">
                     <DashboardMenu />
@@ -26,7 +27,7 @@ const LendAndEarn = () => {
                     <AddBat />
                 </Col>
             </Row>
-
+            </Container>
             
         </React.Fragment>
  )

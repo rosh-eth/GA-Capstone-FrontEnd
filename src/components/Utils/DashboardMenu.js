@@ -10,48 +10,48 @@ const Menu = () => {
         <div>
             <Row>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <h3><Link to='/'>InstaDapp</Link></h3>
+                    <h3 className='navbar-brand'><Link to='/'>InstaDapp</Link></h3>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/dashboard'><FontAwesomeIcon icon={faHome} className="mr-3"/>Dashboard</Link></p>
+                    <p><Link to='/dashboard' className='text-muted font-weight-normal'><FontAwesomeIcon icon={faHome} className="mr-3 text-muted"/>Dashboard</Link></p>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faRandom} className="mr-3" />MCD Migration</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><FontAwesomeIcon icon={faRandom} className="mr-3" />MCD Migration</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/lendandearn'><FontAwesomeIcon icon={faDollarSign} className="mr-3" />Lend & Earn</Link></p>
+                    <p><Link to='/lendandearn' className='text-muted font-weight-normal'><FontAwesomeIcon icon={faDollarSign} className="mr-3" />Lend & Earn</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faCompass} className="mr-3" />Protocol Bridge</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><FontAwesomeIcon icon={faCompass} className="mr-3" />Protocol Bridge</Link></p>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><Image src="https://instadapp.io/img/icons/protocols/makerdao.png"  className="mr-3" width="20px"/>Maker MCD</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><Image src="https://instadapp.io/img/icons/protocols/makerdao.png"  className="mr-3" width="20px"/>Maker MCD</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><Image src="https://instadapp.io/img/icons/protocols/makerdao.png" className="mr-3" width="20px"/>Maker SCD</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><Image src="https://instadapp.io/img/icons/protocols/makerdao.png" className="mr-3" width="20px"/>Maker SCD</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><Image src="https://instadapp.io/img/icons/protocols/compound.svg" className="mr-3" width="20px"/>Compound</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><Image src="https://instadapp.io/img/icons/protocols/compound.svg" className="mr-3" width="20px"/>Compound</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><Image src="https://instadapp.io/img/icons/protocols/uniswap.png" className="mr-3" width="20px"/>UniSwap Pools</Link></p>
+                    <p><Link to='#' className='text-muted font-weight-normal'><Image src="https://instadapp.io/img/icons/protocols/uniswap.png" className="mr-3" width="20px"/>UniSwap Pools</Link></p>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faEject}  className="mr-3"/>Exit</Link></p>
+                    <p><Link to='/'  className='text-muted font-weight-normal'><FontAwesomeIcon icon={faEject}  className="mr-3"/>Exit</Link></p>
                     <hr />
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={['fab', 'twitter']}  className="mr-3"/>Twitter</Link></p>
+                    <p><Link to='#'><FontAwesomeIcon icon={['fab', 'twitter']}  className="mr-3"/>Twitter</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={['fab', 'telegram']}  className="mr-3"/>Telegram</Link></p>
+                    <p><Link to='#'><FontAwesomeIcon icon={['fab', 'telegram']}  className="mr-3"/>Telegram</Link></p>
                 </Col>
                 <Col xs="12" sm="12" md="12" lg="12" xl="12">
-                    <p><Link to='/'><FontAwesomeIcon icon={faMailBulk} className="mr-3" />Email</Link></p>
+                    <p><Link to='#'><FontAwesomeIcon icon={faMailBulk} className="mr-3" />Email</Link></p>
                 </Col>
             </Row>
 
