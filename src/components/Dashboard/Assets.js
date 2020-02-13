@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Card , Col, Row, CardColumns} from 'react-bootstrap';
+import {calcAssets } from './Calculations/Calculations';
+import {UserContext} from '../../App';
 
 const Assets = () => {
+
+    const userContext = useContext(UserContext); 
 
     return (
         <div>
@@ -11,7 +15,7 @@ const Assets = () => {
                         <Card.Body>
                             <Card.Title>Assets</Card.Title>
                             <Card.Text>
-                                <h2>$3,000.00</h2>
+                                <h2>${calcAssets(userContext.ethPrice, userContext.eth, userContext.daiPrice, userContext.dai, userContext.batPrice, userContext.bat)}</h2>
                             </Card.Text>
                         </Card.Body>
                     </Card>

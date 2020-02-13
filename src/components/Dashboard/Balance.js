@@ -48,7 +48,7 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">{userContext.bat}</h6>
-                                <h5>${calcBalance(userContext.Price, userContext.bat)}</h5>
+                                <h5>${calcBalance(userContext.batPrice, userContext.bat)}</h5>
                                 </Col>
                                 <Col>
                                     <Image src="https://instadapp.io/img/icons/erc20Tokens/bat.svg" width="50px" />

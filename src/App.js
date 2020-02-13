@@ -25,6 +25,7 @@ const App = () => {
   const [batPrice, setBatPrice] = useState(0);
   const [daiPrice, setDaiPrice] = useState(0);
   
+  
   useEffect(() => {
     fetch(`http://localhost:4000/auth/profile/${userId}`)
     .then(response => response.json())
