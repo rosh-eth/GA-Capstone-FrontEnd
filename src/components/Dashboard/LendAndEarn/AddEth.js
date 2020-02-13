@@ -30,7 +30,7 @@ const AddEth = () => {
                             <Row>
                                 <Col>
                                     <div class="input-group input-group-lg">
-                                        <input type="text" data-id="eth" class="form-control" placeholder="0.00" aria-label="Qty"  onChange={(event) => event.target.value}></input>
+                                        <input type="text" data-id="eth" class="form-control" placeholder="0.00" aria-label="Qty"  onChange={(event) => console.log(event.target.value)}></input>
                                     </div>
                                 </Col>
                                 <Col>

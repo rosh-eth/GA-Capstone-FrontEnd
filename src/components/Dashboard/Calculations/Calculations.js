@@ -12,7 +12,7 @@ export function calcAssets(ethPrice, ethBalance, daiPrice, daiBalance, batPrice,
         console.log('daiAssets', daiTotal)
         console.log('batAssets', batTotal)
 
-        const totalAssets = parseFloat(batTotal,2) + parseFloat(daiTotal,2) + parseFloat(ethTotal,2); 
+        const totalAssets = (parseFloat(batTotal,2) + parseFloat(daiTotal,2) + parseFloat(ethTotal,2)).toFixed(2); 
         console.log('totalAssets', totalAssets)
 
         return totalAssets;
