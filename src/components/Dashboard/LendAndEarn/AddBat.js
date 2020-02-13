@@ -1,7 +1,10 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import { Card, Col, Row, Button, Image } from 'react-bootstrap';
+import {UserContext} from '../../../App';
 
 const AddBat = () => {
+
+    const userContext = useContext(UserContext);
 
     return (
         <div>
@@ -10,7 +13,7 @@ const AddBat = () => {
                     <Card.Img className="rounded mx-auto d-block my-4" style={{ width: '120px' }} src="https://instadapp.io/earn/img/icons/erc20Tokens/bat.svg" />
                     <Card.Body>
                         <Card.Title>
-                            <h2>0.00</h2>
+                            <h2>{userContext.bat}</h2>
                             <p>Your BAT Balance</p>
                         </Card.Title>
                         <Card.Text>
