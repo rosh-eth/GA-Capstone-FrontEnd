@@ -17,10 +17,13 @@ const PortfolioProvider = UserContext.Provider;
 
 const App = () => {
 
-  const [userId, setUser] = React.useState("5e3dfa6d7028c25d210f4e14");
-  const [eth, setEth] = React.useState(5.50);
-  const [dai, setDai] = React.useState(0.00);
-  const [bat, setBat] = React.useState(0.00);
+  const [userId, setUser] = useState("5e3dfa6d7028c25d210f4e14");
+  const [eth, setEth] = useState(0.00);
+  const [dai, setDai] = useState(0.00);
+  const [bat, setBat] = useState(0.00);
+  const [ethPrice, setEthPrice] = useState(0);
+  const [batPrice, setBatPrice] = useState(0);
+  const [daiPrice, setDaiPrice] = useState(0);
   
   useEffect(() => {
     fetch(`http://localhost:4000/auth/profile/${userId}`)
@@ -37,12 +40,32 @@ const App = () => {
     console.log('updated state');
   }, [eth, dai, bat])
 
+  useEffect(() => {
+    fetch(`http://localhost:4000/price/eth`)
+    .then(response => response.json())
+    .then(data => {
+      setEthPrice(data.usd_price);
+    })
+
+    fetch(`http://localhost:4000/price/bat`)
+    .then(response => response.json())
+    .then(data => {
+      setBatPrice(data.usd_price);
+    })
+
+    fetch(`http://localhost:4000/price/dai`)
+    .then(response => response.json())
+    .then(data => {
+      setDaiPrice(data.usd_price);
+    })
+  }, [])
+
   AOS.init()
   library.add(fab)
   
   return (
     <div>
-      <PortfolioProvider value={{userId, setUser, eth, setEth, dai, setDai, bat, setBat}}>
+      <PortfolioProvider value={{userId, setUser, eth, setEth, dai, setDai, bat, setBat, ethPrice, setEthPrice, batPrice, setBatPrice, daiPrice, setDaiPrice}}>
       <Switch>
       <Container style={{ background: '#F9FBFD' }} fluid >
         <Route exact path="/" component={Home} />

@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import { Card , Col, Row, CardColumns, Image} from 'react-bootstrap';
 import {UserContext} from '../../App';
-import {calcBalance } from './Calculations/Calculations';
+import {calcBalance, priceFeed } from './Calculations/Calculations';
 
 const Balance = () => {
     
@@ -19,7 +19,7 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">{userContext.eth}</h6>
-                                <h5>${calcBalance(200, userContext.eth)}</h5>
+                                <h5>${calcBalance(userContext.ethPrice, userContext.eth)}</h5>
                                 </Col>
                                 <Col>
                                     <Image src="https://instadapp.io/img/icons/erc20Tokens/eth.svg" width="50px" />
@@ -34,7 +34,7 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">{userContext.dai}</h6>
-                                <h5>${calcBalance(200, userContext.dai)}</h5>
+                                <h5>${calcBalance(userContext.daiPrice, userContext.dai)}</h5>
                                 </Col>
                                 <Col>
                                     <Image src="https://instadapp.io/img/icons/erc20Tokens/dai.svg" width="50px" />
@@ -48,7 +48,7 @@ const Balance = () => {
                                 <Row>
                                     <Col>
                                 <h6 className="text-muted">{userContext.bat}</h6>
-                                <h5>${calcBalance(200, userContext.bat)}</h5>
+                                <h5>${calcBalance(userContext.Price, userContext.bat)}</h5>
                                 </Col>
                                 <Col>
                                     <Image src="https://instadapp.io/img/icons/erc20Tokens/bat.svg" width="50px" />
