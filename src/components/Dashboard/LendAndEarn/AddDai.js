@@ -1,10 +1,28 @@
-import React, {useContext} from 'react';
+import React , {useContext, useState} from 'react';
 import { Card, Col, Row, Button, Image } from 'react-bootstrap';
 import {UserContext} from '../../../App';
 
 const AddDai = () => {
 
     const userContext = useContext(UserContext);
+
+    const [amount, setAmount] = useState(0);
+    const {setDai, dai} = userContext;
+
+    const handleDeposit = (event) => {
+        event.preventDefault();
+        console.log('You clicked Submit')
+
+        setDai(parseInt(amount, 10) + dai);
+
+    }
+
+    const handleWithdrawal = (event) => {
+        event.preventDefault();
+        console.log('You clicked Submit')
+
+        setDai(dai - parseInt(amount, 10));
+    }
 
     return (
         <div>
@@ -22,7 +40,7 @@ const AddDai = () => {
                             <Row>
                                 <Col>
                                     <div class="input-group input-group-lg">
-                                        <input type="text" data-id="dai" class="form-control" placeholder="0.00" aria-label="Qty" aria-describedby="basic-addon1"></input>
+                                        <input type="text" data-id="dai" class="form-control" placeholder="0.00" aria-label="Qty"  onChange={(event) => setAmount(event.target.value)}></input>
                                     </div>
                                 </Col>
                                 <Col>
@@ -30,8 +48,8 @@ const AddDai = () => {
                                 </Col>
                             </Row>
                         </Card.Text>
-                        <Button variant="success" className="mx-3">Deposit</Button>
-                        <Button variant="primary">Withdraw</Button>
+                        <Button onClick={handleDeposit} variant="success" className="mx-3">Deposit</Button>
+                        <Button onClick={handleWithdrawal} variant="primary">Withdraw</Button>
                     </Card.Body>
                 </Card>
             </Row>
