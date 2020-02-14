@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Form, Button, Card } from 'react-bootstrap'
 
 const SignUpForm = () => {
+
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const handleSubmit = (event) => {
+        console.log("2")
+    }
 
     return (
         <div>
@@ -11,7 +18,7 @@ const SignUpForm = () => {
                 <Card.Body>
                     <Card.Title className="text-center">Sign Up!</Card.Title>
                     <Card.Text>
-                        <Form className="text-center" >
+                        <Form className="text-center" onSubmit={handleSubmit} >
                             <Form.Group controlId="formBasicEmail">
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" />
