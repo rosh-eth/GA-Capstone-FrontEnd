@@ -1,10 +1,29 @@
-import React, {useContext} from 'react';
+import React , {useContext, useState} from 'react';
 import { Card, Col, Row, Button, Image } from 'react-bootstrap';
 import {UserContext} from '../../../App';
 
 const AddBat = () => {
 
     const userContext = useContext(UserContext);
+
+
+    const [amount, setAmount] = useState(0);
+    const {setBat, bat} = userContext;
+
+    const handleDeposit = (event) => {
+        event.preventDefault();
+        console.log('You clicked Submit')
+
+        setBat(parseInt(amount, 10) + bat);
+
+    }
+
+    const handleWithdrawal = (event) => {
+        event.preventDefault();
+        console.log('You clicked Submit')
+
+        setBat(bat - parseInt(amount, 10));
+    }
 
     return (
         <div>
@@ -22,7 +41,7 @@ const AddBat = () => {
                             <Row>
                                 <Col>
                                     <div class="input-group input-group-lg">
-                                        <input type="text" data-id="bat" class="form-control" placeholder="0.00" aria-label="Qty" aria-describedby="basic-addon1"></input>
+                                        <input type="text" data-id="bat" class="form-control" placeholder="0.00" aria-label="Qty"  onChange={(event) => setAmount(event.target.value)}></input>
                                     </div>
                                 </Col>
                                 <Col>
@@ -30,8 +49,8 @@ const AddBat = () => {
                                 </Col>
                             </Row>
                         </Card.Text>
-                        <Button variant="success" className="mx-3">Deposit</Button>
-                        <Button variant="primary">Withdraw</Button>
+                        <Button onClick={handleDeposit} variant="success" className="mx-3">Deposit</Button>
+                        <Button onClick={handleWithdrawal} variant="primary">Withdraw</Button>
                     </Card.Body>
                 </Card>
             </Row>
